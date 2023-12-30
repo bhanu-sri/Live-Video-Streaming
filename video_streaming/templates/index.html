@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            color: black; 
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Live Streaming</h1>
+    <div class="image-container">
+        <img src="{{url_for('video')}}" />
+    </div>
+</body>
+
+</html>
